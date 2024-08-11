@@ -11,5 +11,6 @@ for num in numbers:
             prime.append(num)
     else:
         not_prime.append(num)
+        not_prime.remove(1)
 print('Primes:', prime)
 print('Not Primes:', not_prime)
