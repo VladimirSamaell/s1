@@ -2,6 +2,8 @@ numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]
 prime = []
 not_prime = []
 for num in numbers:
+    if num == 1:
+        continue
     if num > 1:
         for i in range(2, num):
             if (num % i) == 0:
@@ -11,6 +13,5 @@ for num in numbers:
             prime.append(num)
     else:
         not_prime.append(num)
-        not_prime.remove(1)
 print('Primes:', prime)
 print('Not Primes:', not_prime)
